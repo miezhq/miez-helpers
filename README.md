@@ -2,4 +2,4 @@
 
 ## License
 
-[MIT](https://github.com/miez/miez-helpers/blob/master/LICENSE)
+[MIT](https://github.com/miezhq/miez-helpers/blob/master/LICENSE)
