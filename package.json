@@ -1,0 +1,13 @@
+{
+  "name": "@miez/helpers",
+  "version": "0.0.9",
+  "engines": {
+    "node": ">=7.4.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "chai-things": "^0.2.0",
+    "mocha": "^2.3.3"
+  }
+}
