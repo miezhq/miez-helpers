@@ -4,7 +4,7 @@ This helper component will give you the ability to manipulate plain text passwor
 
 ## Basic usage
 
-```
+```javascript
 
 const PasswordHelper = require('@miez/helpers/password');
 const passwordHelper = new PasswordHelper();
@@ -36,7 +36,7 @@ The `PasswordHelper` class supports the following arguments:
 - `iterations` - cost of the hash computation, default `18000`
 - `digest` - algorithm used in the stretching process, default `sha512`
 
-```
+```javascript
 
 const PasswordHelper = require('@miez/helpers/password');
 const passwordHelper = new PasswordHelper({
@@ -57,7 +57,7 @@ const passwordHelper = new PasswordHelper({
 
 Creates a password hash using a strong one-way hashing algorithm. It is an abstraction over `crypto.pbkdf2()`, the random `salt` is generated using `crypto.randomBytes()`
 
-```
+```javascript
 
 passwordHelper.hash(password [, options], callback);
 
@@ -65,7 +65,8 @@ passwordHelper.hash(password [, options], callback);
 
 Passing a custom salt:
 
-```
+```javascript
+
 const opts = {
   salt: 'my very weak salt`,
 };
@@ -81,7 +82,8 @@ passwordHelper.hash('passwordString', opts, (err, hash, salt) => {
 
 To overwrite the current configuration pass a configuration object:
 
-```
+```javascript
+
 const opts = {
   len: 1024,
   saltLen: 256,
