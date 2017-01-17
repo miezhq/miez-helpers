@@ -68,7 +68,7 @@ Passing a custom salt:
 ```javascript
 
 const opts = {
-  salt: 'my very weak salt`,
+  salt: 'my very weak salt',
 };
 
 passwordHelper.hash('passwordString', opts, (err, hash, salt) => {
@@ -87,7 +87,7 @@ To overwrite the current configuration pass a configuration object:
 const opts = {
   len: 1024,
   saltLen: 256,
-  salt: 'my very weak salt`,
+  salt: 'my very weak salt',
 };
 
 passwordHelper.hash('passwordString', opts, (err, hash, salt) => {
