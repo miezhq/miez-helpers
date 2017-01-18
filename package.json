@@ -1,13 +1,32 @@
 {
   "name": "@miez/helpers",
   "version": "0.0.9",
+  "description": "A collection of helpers for your Node.js project",
   "engines": {
     "node": ">=7.4.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miezhq/miez-helpers.git"
+  },
+  "contributors": [
+    "Robert Onodi (https://github.com/robert52)",
+    "Robert Richter (https://github.com/robi-richter)"
+  ],
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "chai": "^2.3.0",
     "chai-things": "^0.2.0",
     "mocha": "^2.3.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/miezhq/miez-helpers/issues"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    ".gitignore",
+    "password/"
+  ]
 }
