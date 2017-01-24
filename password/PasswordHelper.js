@@ -112,6 +112,28 @@ class PasswordHelper {
       callback(null, saltBuf.toString('hex'));
     });
   }
+
+  /**
+   * Verifies if a password matches a hash for a specific salt
+   *
+   * @param {string} password
+   * @param {string} passwordHash
+   * @param {string} salt
+   * @param {function} callback
+   */
+  verify(password, passwordHash, salt, callback) {
+    this.hash(password, { salt }, (err, hashedPassword) => {
+      if (err) {
+        return callback(err);
+      }
+
+      if (passwordHash === hashedPassword) {
+        callback(null, true);
+      }
+
+      callback(null, false);
+    })
+  }
 }
 
 module.exports = PasswordHelper;
