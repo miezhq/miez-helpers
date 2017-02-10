@@ -114,7 +114,7 @@ Simple usage:
 ```javascript
 
 passwordHelper.verify(password, passwordHash, salt, callback);
-passwordHelper.hash('passwordString', '49b5d...6658e', 'initial salt', (err, result) => {
+passwordHelper.verify('passwordString', '49b5d...6658e', 'initial salt', (err, result) => {
   if (err) throw err;
 
   console.log(result); // true
