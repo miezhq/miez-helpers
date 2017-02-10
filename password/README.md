@@ -101,6 +101,27 @@ passwordHelper.hash('passwordString', opts, (err, hash, salt) => {
 
 ### verify
 
+Verifies that a password matches a hash. Internally  uses `.hash()` method to create the hash using the provided `salt`. Returns `true` for a successful match, `false` otherwise.
+
+```javascript
+
+passwordHelper.verify(password, passwordHash, salt, callback);
+
+```
+
+Simple usage:
+
+```javascript
+
+passwordHelper.verify(password, passwordHash, salt, callback);
+passwordHelper.hash('passwordString', '49b5d...6658e', 'initial salt', (err, result) => {
+  if (err) throw err;
+
+  console.log(result); // true
+});
+
+```
+
 ## License
 
 [MIT](https://github.com/miezhq/miez-helpers/blob/master/LICENSE)

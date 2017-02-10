@@ -128,7 +128,7 @@ class PasswordHelper {
       }
 
       if (passwordHash === hashedPassword) {
-        callback(null, true);
+        return callback(null, true);
       }
 
       callback(null, false);

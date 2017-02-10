@@ -1,6 +1,6 @@
 {
   "name": "@miez/helpers",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "description": "A collection of helpers for your Node.js project",
   "engines": {
     "node": ">=7.4.0"
